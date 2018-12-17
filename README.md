@@ -3,11 +3,11 @@ Hey there, this is the implementation of **I1** (heatmap loss + integral loss) i
 
 ----
 ## Source code & Installation
-Please refer to the **"caffe_code/"** folder and **"Installation"** section in readme of [This repo](https://github.com/strawberryfg/c2f-3dhm-human-caffe)
+Please refer to the **"caffe_code/"** folder and **"Installation"** section in readme of [this repo](https://github.com/strawberryfg/c2f-3dhm-human-caffe)
 
 ----
 ## Configuration
-This is for Caffe Ubuntu with 12 GB Titan card. Will release a windows version w/ batch size = 1 later.
+This is for **Caffe** Ubuntu with 12 GB Titan card. Will release a windows version w/ batch size = 1 later.
 
 ----
 ## Data
