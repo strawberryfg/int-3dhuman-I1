@@ -19,8 +19,7 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
   |:-:|:-:|:-:|:-:|
   | 16     | [71.0](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png) | [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) | [73.6](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d16_full.png) |
   | 32     | [55.9](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png) | [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n)  | [68.6](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d32_full.png) |
-  
-  
+  | 64     | [65.9](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png) | [net_iter_671782.caffemodel](https://drive.google.com/open?id=1tCDiVq2Uzv9eQePTalNB0xMqwWyynkQU)   | [67.1](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d64_full.png) |  
 ---
 ## Training procedure
 *First off*, **THERE IS NO GUARANTEE THAT OTHER TRAINING STRATEGY WOULD NOT YIELD SAME/SIMILAR OR BETTER RESULTS. THIS IS JUST FOR REFERENCE.**
