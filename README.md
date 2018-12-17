@@ -23,7 +23,7 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
 
 *Note that* in order to restrain one from tuning loss weight of 2D/3D HM/integral to the best of one's ability, [adaptive euclidean loss weight balancing technique](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/src/caffe/layers/Operations/adaptive_weight_euc_loss_layer.cpp) (as detailed below) is initialized insofar as it does not degrade performance.
 
-*I have a deep suspicion* concerning the bearing of different training technique on final number. And so I would say what matters most is the methodology itself rather than the superiority or inferiority of number.
+*I have a deep [suspicion](http://selfpace.uconn.edu/class/percep/DescartesMeditations.pdf)* concerning the bearing of different training technique on final number. And so I would say what matters most is the methodology itself rather than the superiority or inferiority of number.
   
 ---
 ## Training procedure
