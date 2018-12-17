@@ -1,6 +1,23 @@
 # int-3dhuman-I1
 Hey there, this is the implementation of **I1** (heatmap loss + integral loss) in [this paper](https://arxiv.org/pdf/1711.08229.pdf). Training is on H36M *exclusively* with 2-stage [*coarse to fine*](https://arxiv.org/pdf/1611.07828.pdf) [Hourglass](https://arxiv.org/pdf/1603.06937.pdf). Kindly jump to **Training procedure** below if you are not using C++.
 
+
+----
+## Sketch
+
+   ```
+   ${POSE_ROOT}
+   +-- caffe_code
+   +-- data
+   +-- figs
+   +-- models
+   +-- training
+   +-- testing
+   +-- README.md
+   ```
+
+----
+
 ----
 ## Source code & Installation
 Please refer to the **"caffe_code/"** folder and **"Installation"** section in readme of [this repo](https://github.com/strawberryfg/c2f-3dhm-human-caffe)
@@ -144,6 +161,7 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
 ---
 ## Testing steps
 Put corresponding trained models under folder **models**. (Simply scroll up to **MPJPE Performance** for names of models) 
+
 **d2 = 32**
   ```
   cd testing/d2=32
