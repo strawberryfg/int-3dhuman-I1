@@ -1,5 +1,5 @@
 # int-3dhuman-I1
-Hello this is just a test 
+Hey there, this is the implementation of I1 (heatmap loss + integral loss) in this paper. Training is on H36M *exclusively* with 2-stage [coarse to fine](https://arxiv.org/pdf/1611.07828.pdf) Hourglass(https://arxiv.org/pdf/1603.06937.pdf). Simply jump to **Training procedure** below if you are not using C++.
 
 ----
 ## Source code & Installation
@@ -7,7 +7,7 @@ Please refer to the **"caffe_code/"** folder and **"Installation"** section in r
 
 ----
 ## Configuration
-This is for Ubuntu with 12 GB Titan card. Will release a windows version w/ batch size = 1 later.
+This is for Caffe Ubuntu with 12 GB Titan card. Will release a windows version w/ batch size = 1 later.
 
 ----
 ## Data
