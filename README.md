@@ -165,11 +165,16 @@ Put corresponding trained models under folder **models**. (Simply scroll up to *
 **d2 = 32**
   ```
   cd testing/d2=32
-  $CAFFE_ROOT/build/tools/caffe test -model test_d32_statsfalse.prototxt -weights models/net_iter_567946.caffemodel	 -iterations 274500
+  $CAFFE_ROOT/build/tools/caffe test -model test_d32_statsfalse.prototxt -weights models/net_iter_567946.caffemodel	-iterations 274500
   ```
   *Denouement*: [**55.9 mm**](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png)
 
-
+**d2 = 64**
+  ```
+  cd testing/d2=64
+  $CAFFE_ROOT/build/tools/caffe test -model test_d64_statsfalse.prototxt -weights models/net_iter_671782.caffemodel	-iterations 274500
+  ```
+  *Denouement*: [**65.9 mm**](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png)
 
 # FAQ 
 

@@ -26,7 +26,7 @@ layer {
   top: "image_index"
   gen_sequential_index_param {
       batch_size: 2
-      current_index_file_path: "cur_id_test_d32_statsfalse.txt"
+      current_index_file_path: "cur_id_test_d64_statsfalse.txt"
       num_of_samples: 548999
       start_index: 1559572
   }
@@ -34,7 +34,6 @@ layer {
       phase: TEST
   }
 }
-
 
 
 
@@ -343,7 +342,7 @@ layer {
   top: "label_3dhm"
   type: "DeepHumanModelGen3DHeatmapInMoreDetailV3"
   deep_human_model_gen_3d_heatmap_in_more_detail_v3_param {
-    depth_dims: 32
+    depth_dims: 64
   map_size: 64
   crop_size: 256
 
@@ -12037,7 +12036,7 @@ layer {
  bottom: "heatmap" 
  top: "loss_2dhm" 
  bottom: "label_2dhm"
- loss_weight: 0.000
+ loss_weight: 1.000
  
 }
 
@@ -22503,7 +22502,7 @@ layer {
  }
  }
 layer {
- name: "conv_5_d32"
+ name: "conv_5_d64"
  type: "Convolution" 
  bottom: "fc_4" 
  top: "heatmap2" 
@@ -22516,13 +22515,13 @@ layer {
  	 decay_mult: 0
  }
  convolution_param { 
- num_output: 512
+ num_output: 1024
  pad: 0
  kernel_size: 1
  stride:1
  weight_filler { 
  type: "gaussian"
- std: 0.002
+ std: 0.001
  }
  bias_filler {
  type: "constant"
@@ -22640,7 +22639,7 @@ layer {
   reshape_param {
     shape {
        dim: 0
-       dim: 512
+       dim: 1024
        dim: 64
        dim: 64
     }
@@ -22655,7 +22654,7 @@ layer {
   name: "heatmap2_norm"
   deep_human_model_softmax_3d_hm_param {
       joint_num: 16
-      depth_dims: 32
+      depth_dims: 64
      
   }
 }
@@ -22685,21 +22684,21 @@ layer {
   type: "Slice"
   slice_param {
      axis: 1   
-   slice_point: 32
    slice_point: 64
-   slice_point: 96
    slice_point: 128
-   slice_point: 160
    slice_point: 192
-   slice_point: 224
    slice_point: 256
-   slice_point: 288
    slice_point: 320
-   slice_point: 352
    slice_point: 384
-   slice_point: 416
    slice_point: 448
-   slice_point: 480
+   slice_point: 512
+   slice_point: 576
+   slice_point: 640
+   slice_point: 704
+   slice_point: 768
+   slice_point: 832
+   slice_point: 896
+   slice_point: 960
    
   }
 }
@@ -23722,7 +23721,7 @@ layer {
   top: "joint2dloss_s2_int"
   name: "joint2dloss_s2_int"
   type: "EuclideanLoss"
-  loss_weight: 0.0
+  loss_weight: 1.0
 }
 
 #=========get predicted depth from 3D heatmap integral
@@ -23758,7 +23757,7 @@ layer {
   bottom: "annot_depth"
   top: "depthloss_s2_int"
   name: "depthloss_s2_int"
-  loss_weight: 0.0
+  loss_weight: 1.0
 }
 
 #======integral global space + gt root -> mm error MPJPE
@@ -23840,7 +23839,7 @@ layer {
   top: "pred_joint_3d_s2_max"
   name: "pred_joint_3d_s2_max"
   deep_human_model_h36m_cha_gen_joint_fr_xyz_heatmap_param {
-     depth_dims: 32
+     depth_dims: 64
      map_size: 64
      x_lb: 0.0
      x_ub: 1.0
@@ -24191,7 +24190,7 @@ layer {
  bottom: "heatmap2" 
  top: "loss_3dhm" 
  bottom: "label_3dhm"
- loss_weight: 0.0
+ loss_weight: 0.08
  #loss_weight: 0.3 (d=4)
  #loss_weight: 0.1 (d=2)
  #loss_weight: 1.0 (d=1)
@@ -24246,7 +24245,7 @@ layer {
   #bottom: "pred_joint_2d_s1_int"
   #bottom: "crop_gt_joint_2d"
 
-  loss_weight: 1.0
+  loss_weight: 0.0
 }
 
 #layer {
