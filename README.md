@@ -13,6 +13,13 @@ This is for **Caffe** Ubuntu with 12 GB Titan card.
 ## Data
 Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/master/data). Note this is different from commonly used data like [effective baseline](https://github.com/una-dinosauria/3d-pose-baseline). Major difference is my training(testing) set has 1559571(548999) images. 	
 
+----
+## MPJPE Performance 
+  | d2 | MPJPE(mm) of *this repo (I1)*  |  Caffe Model  | 
+  |:-:|:-:|:-:|
+  | 16     | 71.0 | [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) | [net_iter_526322.solverstate](https://drive.google.com/open?id=1MkLjLGUmELZ8nFywI2R7PnHoF8cYkfL2)|
+
+
 ---
 ## Training procedure
 *First off*, **THERE IS NO GUARANTEE THAT OTHER TRAINING STRATEGY WOULD NOT YIELD SAME/SIMILAR OR BETTER RESULTS. THIS IS JUST FOR REFERENCE.**
