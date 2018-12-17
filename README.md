@@ -143,13 +143,13 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   
 ---
 ## Testing steps
- 
+Put corresponding trained models under folder **models**. (Simply scroll up to **MPJPE Performance** for names of models) 
 **d2 = 32**
   ```
-  cd testing
-  $CAFFE_ROOT/build/tools/caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_720929.caffemodel -iterations 183000
+  cd testing/d2=32
+  $CAFFE_ROOT/build/tools/caffe test -model test_d32_statsfalse.prototxt -weights models/net_iter_567946.caffemodel	 -iterations 274500
   ```
-  This will give you **67.1 mm** (**figs/test_d64_full.png**)
+  [**55.9 mm**](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png)
 
 
 
