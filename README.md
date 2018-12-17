@@ -141,7 +141,17 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
  
   [net_iter_671782.caffemodel](https://drive.google.com/open?id=1tCDiVq2Uzv9eQePTalNB0xMqwWyynkQU) train around **40 *mm***, test around [**66 *mm***](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png) (click [this](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png) for screenshot).
   
-  
+---
+## Testing steps
+ 
+**d2 = 32**
+  ```
+  cd testing
+  $CAFFE_ROOT/build/tools/caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_720929.caffemodel -iterations 183000
+  ```
+  This will give you **67.1 mm** (**figs/test_d64_full.png**)
+
+
 
 # FAQ 
 
