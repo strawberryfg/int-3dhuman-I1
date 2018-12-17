@@ -25,7 +25,7 @@ The starting point is MPII pretrained model. See head of [training section](http
 
 **Note 1 [*heatmap2 init std*]:** The init of layer "heatmap2" (which reduces dimension to generate final 3d heatmap output) is gaussian with standard deviation of *a hyper param*.
 
-**Note 2 [*loss*]:** 
+**Note 2 [*loss*]:** Adaptive weight balancing is employed. Found [*this paper*](https://arxiv.org/pdf/1707.04822.pdf) several weeks after writing the [*AdaptiveWeightEucLossLayer*](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/src/caffe/layers/Operations/adaptive_weight_euc_loss_layer.cpp)
 
 1. **Adaptive H1** adaptively computes gradient magnitude of 2D/3D heatmap w.r.t neuron, and tries to **balance gradients flowing from 2D and 3D heatmap**. Search *AdaptiveWeightEucLoss* in [this pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf) for expatiation.
 
