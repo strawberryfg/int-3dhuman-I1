@@ -34,7 +34,7 @@ This is for **Caffe** Ubuntu with 12 GB Titan card.
 
 ----
 ## Data
-Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/master/data). Note this is different from commonly used data like [effective baseline](https://github.com/una-dinosauria/3d-pose-baseline). Major difference is my training(testing) set has 1559571(548999) images. 	
+Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/master/data). Note this is different from commonly used data like [effective baseline](https://github.com/una-dinosauria/3d-pose-baseline). Major difference is my training(testing) set has **1559571(548999)** images. 	
 
 ----
 ## MPJPE Performance 
@@ -104,7 +104,7 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   ```
   | d2 | lr   |  loss ratio of 2D HM:3D HM:integral   | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
-  | 8     | **5e-6** | 1:0.1:1   | Manual | [net_iter_350433.caffemodel](https://drive.google.com/open?id=1WQTbk1gCHOqK1FsnTVw9I7k687QqQr7A)| [net_iter_350433.solverstate](https://drive.google.com/open?id=1YpPs6Fx08KGbzpLUbopOQ3puho5im33M)|
+  | 8     | **5e-6** | **1:0.1:1**   | Manual | [net_iter_350433.caffemodel](https://drive.google.com/open?id=1WQTbk1gCHOqK1FsnTVw9I7k687QqQr7A)| [net_iter_350433.solverstate](https://drive.google.com/open?id=1YpPs6Fx08KGbzpLUbopOQ3puho5im33M)|
   
   [net_iter_350433.caffemodel](https://drive.google.com/open?id=1WQTbk1gCHOqK1FsnTVw9I7k687QqQr7A) train around **71 *mm***, test around **83 *mm***.
 - **d2 = 16**
@@ -125,7 +125,7 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   ```
   | d2 | lr   |  loss ratio of 2D HM:3D HM:integral   | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
-  | 16     | **5e-6** | 1:0.3:1   | Manual | [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) | [net_iter_526322.solverstate](https://drive.google.com/open?id=1MkLjLGUmELZ8nFywI2R7PnHoF8cYkfL2)|
+  | 16     | **5e-6** | **1:0.3:1**   | Manual | [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) | [net_iter_526322.solverstate](https://drive.google.com/open?id=1MkLjLGUmELZ8nFywI2R7PnHoF8cYkfL2)|
  
   [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) train around **47 *mm***, test around [**71 *mm***](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png) (click [this](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png) for screenshot).
   
@@ -137,7 +137,7 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   ```
   | d2 | lr   |  "heatmap2" init std   | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
-  | 32     | 2.5e-5 | 0.002   | Adaptive I1 | [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n) | [net_iter_567946.solverstate](https://drive.google.com/open?id=1AFXPO7SondbiUYbbJZ5cBBu10vuJIQuS) |
+  | 32     | 2.5e-5 | **0.002**   | Adaptive I1 | [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n) | [net_iter_567946.solverstate](https://drive.google.com/open?id=1AFXPO7SondbiUYbbJZ5cBBu10vuJIQuS) |
   
   [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n) train around **49 *mm*** test around [**56 *mm***](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png) (click [this](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png) for screenshot).
 
@@ -160,7 +160,7 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   
   | d2 | lr   |  loss ratio of 2D HM:3D HM:integral   | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
-  | 64     | **5e-6** | 1:0.08:1   | Manual | [net_iter_671782.caffemodel](https://drive.google.com/open?id=1tCDiVq2Uzv9eQePTalNB0xMqwWyynkQU) | [net_iter_671782.solverstate](https://drive.google.com/open?id=1EamXyx6zRt-PiC6UB1pjsKVYXAa8xjX5) |
+  | 64     | **5e-6** | **1:0.08:1**   | Manual | [net_iter_671782.caffemodel](https://drive.google.com/open?id=1tCDiVq2Uzv9eQePTalNB0xMqwWyynkQU) | [net_iter_671782.solverstate](https://drive.google.com/open?id=1EamXyx6zRt-PiC6UB1pjsKVYXAa8xjX5) |
  
   [net_iter_671782.caffemodel](https://drive.google.com/open?id=1tCDiVq2Uzv9eQePTalNB0xMqwWyynkQU) train around **40 *mm***, test around [**66 *mm***](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png) (click [this](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png) for screenshot).
   
