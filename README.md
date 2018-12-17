@@ -107,6 +107,7 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   ```
   cd ../../training/d2=64
   $CAFFE_ROOT/build/tools/caffe train --solver=solver_64_ada.prototxt --snapshot=net_iter_567946.solverstate
+  ```
   | d2 | lr   |  "heatmap2" init std   | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 64     | 2.5e-5 | 0.002   | Adaptive I1 | [net_iter_600890.caffemodel](https://drive.google.com/open?id=185DC6Md-hv3Tibb842BuecnUjOz-cgV9) | [net_iter_600890.solverstate](https://drive.google.com/open?id=1MS-B4i6bCEqRIvCNhU9atAX4kGwvWPV1) |
