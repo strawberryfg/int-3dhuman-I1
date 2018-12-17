@@ -20,8 +20,9 @@ The starting point is MPII pretrained model. See head of [training section](http
 The following is sorted by d2 (*depth dimension of 3d heatmap*) in increaseing order.
 
 **Note**
-- **heatmap2 init std**
+  **heatmap2 init std**
 
+  
 - **d2 = 4**
   ```
   cd training/d2=4
