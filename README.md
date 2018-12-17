@@ -63,6 +63,6 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   ```
   | d2 | lr   |  loss ratio of 2D HM:3D HM:integral   | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
-  | 8     | 5e-6 | 1:0.1:1   | Manual | [net_iter_350433.caffemodel](https://drive.google.com/open?id=1WQTbk1gCHOqK1FsnTVw9I7k687QqQr7A)| [net_iter_350433.solverstate](https://drive.google.com/open?id=1YpPs6Fx08KGbzpLUbopOQ3puho5im33M)|
+  | 8     | **5e-6** | 1:0.1:1   | Manual | [net_iter_350433.caffemodel](https://drive.google.com/open?id=1WQTbk1gCHOqK1FsnTVw9I7k687QqQr7A)| [net_iter_350433.solverstate](https://drive.google.com/open?id=1YpPs6Fx08KGbzpLUbopOQ3puho5im33M)|
   
   
