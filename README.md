@@ -176,6 +176,14 @@ Put corresponding trained models under folder **models**. (Simply scroll up to *
   ```
   *Denouement*: [**65.9 mm**](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png)
 
+  
+**d2 = 16**
+  ```
+  cd testing/d2=16
+  $CAFFE_ROOT/build/tools/caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_526322.caffemodel	-iterations 274500
+  ```
+  *Denouement*: [**71.0 mm**](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png)
+
 # FAQ 
 
 Glad to answer **any** concern. Just email *strawberryfgalois@gmail.com*. Thanks!
