@@ -19,7 +19,7 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
 
 *Having said that*, **I WOULD BE MORE THAN HAPPY TO KNOW IF ANYONE HAS A MORE ELEGANT WAY TO TRAIN THIS *WACKY* STUFF. MUCH APPRECIATED. THANKS!** 
 
-*Back to our topic*
+*Back to our topic*,
 
 The starting point is MPII pretrained model. See head of [training section](https://github.com/strawberryfg/c2f-3dhm-human-caffe) .
 
