@@ -149,7 +149,7 @@ Put corresponding trained models under folder **models**. (Simply scroll up to *
   cd testing/d2=32
   $CAFFE_ROOT/build/tools/caffe test -model test_d32_statsfalse.prototxt -weights models/net_iter_567946.caffemodel	 -iterations 274500
   ```
-  Ending: [**55.9 mm**](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png)
+  *Denouement*: [**55.9 mm**](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png)
 
 
 
