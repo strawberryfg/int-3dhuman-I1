@@ -21,7 +21,7 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
   | 32     | [55.9](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png) | [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n)  | [68.6](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d32_full.png) |
   | 64     | [65.9](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png) | [net_iter_671782.caffemodel](https://drive.google.com/open?id=1tCDiVq2Uzv9eQePTalNB0xMqwWyynkQU)   | [67.1](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d64_full.png) |  
 
-*Note that in order to restrain one from tuning loss weight of 2D/3D HM/integral to the best of one's ability, [adaptive euclidean loss weight balancing technique]((https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/src/caffe/layers/Operations/adaptive_weight_euc_loss_layer.cpp)) is initialized insofar as it does not degrade performance.*
+*Note that in order to restrain one from tuning loss weight of 2D/3D HM/integral to the best of one's ability, [adaptive euclidean loss weight balancing technique](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/src/caffe/layers/Operations/adaptive_weight_euc_loss_layer.cpp) is initialized insofar as it does not degrade performance.*
   
 ---
 ## Training procedure
