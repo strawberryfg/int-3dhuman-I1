@@ -7,7 +7,7 @@ Please refer to the **"caffe_code/"** folder and **"Installation"** section in r
 
 ----
 ## Configuration
-This is for **Caffe** Ubuntu with 12 GB Titan card. Will release a windows version w/ batch size = 1 later.
+This is for **Caffe** Ubuntu with 12 GB Titan card.
 
 ----
 ## Data
@@ -69,3 +69,11 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   
   [net_iter_350433.caffemodel](https://drive.google.com/open?id=1WQTbk1gCHOqK1FsnTVw9I7k687QqQr7A) train around **71 *mm***, test around **83 *mm***
 - **d2 = 16**
+  ```
+  cd ../../training/d2=16
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_164_ada.prototxt --snapshot=net_iter_350433.solverstate
+  ```
+  | d2 | lr   |  "heatmap2" init std   | loss | Caffe Model  | Solver State |
+  |:-:|:-:|:-:|:-:|:-:|:-:|
+  | 16     | 2.5e-5 | **0.002**   | Adaptive I1 | [net_iter_434657.caffemodel](https://drive.google.com/open?id=1qBbSrbkzlK9neE7DmaZDVwFkprr0u3p7)| [net_iter_434657.solverstate](https://drive.google.com/open?id=1JwHjhVwt3ivumKunTagSqkHx5pJb0LoO)|
+  
