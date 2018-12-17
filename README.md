@@ -27,4 +27,5 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increaseing o
   
   | d2 | lr   |  "heatmap2" init std  | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
-  | 4     | 2.5e-5 | 0.01   | Adaptive H1 |123 |8789|
+  | 4     | 2.5e-5 | 0.01   | Adaptive H1 | [net_iter_160533.caffemodel](https://drive.google.com/open?id=1LLTM2Ak4AHbdiZQZrsGhyXucDQOO313k) |8789|
+ 
