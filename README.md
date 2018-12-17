@@ -18,7 +18,9 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
   | d2 | MPJPE(mm) of *this repo (I1)*  |  Caffe Model  | *(For reference)* MPJPE(mm) of *corresponding* [*H1 repo*](https://github.com/strawberryfg/c2f-3dhm-human-caffe)|
   |:-:|:-:|:-:|:-:|
   | 16     | [71.0](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png) | [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) | [73.6](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d16_full.png) |
-
+  | 32     | [55.9](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png) | [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n)  |
+   [68.6](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d32_full.png) |  
+  
 ---
 ## Training procedure
 *First off*, **THERE IS NO GUARANTEE THAT OTHER TRAINING STRATEGY WOULD NOT YIELD SAME/SIMILAR OR BETTER RESULTS. THIS IS JUST FOR REFERENCE.**
