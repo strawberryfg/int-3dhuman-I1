@@ -71,7 +71,7 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
 - **d2 = 16**
   ```
   cd ../../training/d2=16
-  $CAFFE_ROOT/build/tools/caffe train --solver=solver_164_ada.prototxt --snapshot=net_iter_350433.solverstate
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_16_ada.prototxt --snapshot=net_iter_350433.solverstate
   ```
   | d2 | lr   |  "heatmap2" init std   | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
