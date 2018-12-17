@@ -19,7 +19,7 @@ Hey there, this is the implementation of **I1** (heatmap loss + integral loss) i
 ----
 
 ----
-## Related projects 
+## External links (closely related projects)
 [H1](https://github.com/strawberryfg/c2f-3dhm-human-caffe)
 
 [I1 with group normalization, batch size = 1](https://github.com/strawberryfg/3dhuman-groupnorm)
