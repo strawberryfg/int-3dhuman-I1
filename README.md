@@ -88,4 +88,16 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 16     | **5e-6** | 1:0.3:1   | Manual | [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) | [net_iter_526322.solverstate](https://drive.google.com/open?id=1MkLjLGUmELZ8nFywI2R7PnHoF8cYkfL2)|
  
-  [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) train around **47 *mm***, test around [**71 *mm***](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png) (click [this](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png) for screenshot.
+  [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) train around **47 *mm***, test around [**71 *mm***](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png) (click [this](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png) for screenshot).
+  
+- **d2 = 32**
+  - **Adaptive I1** 
+  ```
+  cd ../../training/d2=32
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_32_ada.prototxt --snapshot=net_iter_526322.solverstate
+  ```
+  | d2 | lr   |  "heatmap2" init std   | loss | Caffe Model  | Solver State |
+  |:-:|:-:|:-:|:-:|:-:|:-:|
+  | 32     | 2.5e-5 | 0.002   | Adaptive I1 | [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n) | [net_iter_567946.solverstate](https://drive.google.com/open?id=1AFXPO7SondbiUYbbJZ5cBBu10vuJIQuS) |
+  
+  
