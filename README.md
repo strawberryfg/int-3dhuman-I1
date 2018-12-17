@@ -17,4 +17,10 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
 ## Training procedure
 The starting point is MPII pretrained model. See head of [training section](https://github.com/strawberryfg/c2f-3dhm-human-caffe) .
 
-The following is sorted by d_2 (*depth dimension of 3d heatmap*) in increaseing order.
+The following is sorted by d2 (*depth dimension of 3d heatmap*) in increaseing order.
+
+- **d2 = 4 **
+  ```
+  cd training/d2=4
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d4_ada.prototxt --weights=improved-hourglass_iter_640000.caffemodel
+  ```
