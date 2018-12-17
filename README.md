@@ -27,7 +27,7 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
 
 *As to depth dimension d2*, [the original paper](https://arxiv.org/pdf/1711.08229.pdf) uses **64**. [This paper](https://arxiv.org/pdf/1809.04987.pdf) uses **16**. This repo prefers **32**.
 
-*Piece of advice here*, insofar as d2 is >= 16, it's okay.
+*Piece of advice here*, insofar as d2 is at least **16**, it's okay.
   
 ---
 ## Training procedure
