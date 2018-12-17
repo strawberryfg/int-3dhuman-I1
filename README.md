@@ -88,4 +88,4 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 16     | **5e-6** | 1:0.3:1   | Manual | [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) | [net_iter_526322.solverstate](https://drive.google.com/open?id=1MkLjLGUmELZ8nFywI2R7PnHoF8cYkfL2)|
  
-  [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) train around **47 *mm***, test around **71 *mm***.
+  [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) train around **47 *mm***, test around [**71 *mm***](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png) (click [this](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d16_full.png) for screenshot.
