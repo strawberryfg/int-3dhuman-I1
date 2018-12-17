@@ -22633,7 +22633,7 @@ layer {
   top: "heatmap2_flat_scale"
   name: "heatmap2_flat_scale"
   scale_vector_param {
-    scale_factor: 50.0
+    scale_factor: 30.0
   }
 }
 

@@ -27,6 +27,8 @@ The starting point is MPII pretrained model. See head of [training section](http
 
 **Note 2 [*loss*]:** Adaptive weight balancing is employed. Found [*this paper*](https://arxiv.org/pdf/1707.04822.pdf) several weeks after writing the [*AdaptiveWeightEucLossLayer*](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/src/caffe/layers/Operations/adaptive_weight_euc_loss_layer.cpp)
 
+**Note 3 [*heatmap2_flat_scale*]:** Before softmax normalization, hereinafter *a scale* **30.0** is multiplied by 3d heatmap output for numerical reason. The semantic of heatmap no longer preserves any more before the ensuing integral operation, as alluded in [*this issue*](https://github.com/JimmySuen/integral-human-pose/issues/8).
+
 1. **Adaptive H1** adaptively computes gradient magnitude of 2D/3D heatmap w.r.t neuron, and tries to **balance gradients flowing from 2D and 3D heatmap**. Search *AdaptiveWeightEucLoss* in [this pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf) for expatiation.
 
 The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing order.
