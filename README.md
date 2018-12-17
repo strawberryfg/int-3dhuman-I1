@@ -26,5 +26,5 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increaseing o
   ```
   
   | Method |d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
-|:-:|:-:|:-:|:-:|:-:|
-| Mine     | 64 | [67.1]    | [Google Drive (net_iter_720929.caffemodel)] | [Google Drive (net_iter_720929.solverstate)]|
+  |:-:|:-:|:-:|:-:|:-:|
+  | Mine     | 64 | 111   |123 |8789|
