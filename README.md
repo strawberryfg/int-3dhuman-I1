@@ -21,7 +21,9 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increaseing o
 
 **Note 1 [*heatmap2 init std*]:** The init of layer "heatmap2" (which reduces dimension to generate final 3d heatmap output) is gaussian with standard deviation of *a hyper param*. I do not claim that other init *e.g.* msra, xavier would not produce same or better result.
 
-**Note 2 [*loss*]:** Adaptive H1 adaptively computes gradient magnitude of 2D/3D heatmap w.r.t neuron, and tries to balance gradients flowing from 2D and 3D heatmap.
+**Note 2 [*loss*]:** 
+
+1. Adaptive H1 adaptively computes gradient magnitude of 2D/3D heatmap w.r.t neuron, and tries to balance gradients flowing from 2D and 3D heatmap.
 
   
 - **d2 = 4**
