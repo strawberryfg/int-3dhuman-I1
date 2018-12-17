@@ -140,3 +140,9 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   | 64     | **5e-6** | 1:0.08:1   | Manual | [net_iter_671782.caffemodel](https://drive.google.com/open?id=1tCDiVq2Uzv9eQePTalNB0xMqwWyynkQU) | [net_iter_671782.solverstate](https://drive.google.com/open?id=1EamXyx6zRt-PiC6UB1pjsKVYXAa8xjX5) |
  
   [net_iter_671782.caffemodel](https://drive.google.com/open?id=1tCDiVq2Uzv9eQePTalNB0xMqwWyynkQU) train around **40 *mm***, test around [**66 *mm***](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png) (click [this](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png) for screenshot).
+  
+  
+
+# FAQ 
+
+Glad to answer **any** concern. Just email *strawberryfgalois@gmail.com*. Thanks!
