@@ -17,11 +17,13 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
 ## Training procedure
 *First off*, **THERE IS NO GURANTEE THAT OTHER TRAINING STRATEGY WOULD NOT YIELD SAME/SIMILAR OR BETTER RESULTS. THIS IS JUST FOR REFERENCE.**
 
-*Having said that*, **I WOULD BE MORE THAN HAPPY TO KNOW IF ANYONE HAS A MORE ELEGANT WAY TO TRAIN THIS *WACKY* STUFF. MUCH APPRECIATED.** 
+*Having said that*, **I WOULD BE MORE THAN HAPPY TO KNOW IF ANYONE HAS A MORE ELEGANT WAY TO TRAIN THIS *WACKY* STUFF. MUCH APPRECIATED. THANKS!** 
+
+*Back to our topic*
 
 The starting point is MPII pretrained model. See head of [training section](https://github.com/strawberryfg/c2f-3dhm-human-caffe) .
 
-The following is sorted by d2 (*depth dimension of 3d heatmap*) in increaseing order.
+The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing order.
 
 **Note 1 [*heatmap2 init std*]:** The init of layer "heatmap2" (which reduces dimension to generate final 3d heatmap output) is gaussian with standard deviation of *a hyper param*.
 
