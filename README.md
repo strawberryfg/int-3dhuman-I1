@@ -8,3 +8,7 @@ Please refer to the **"caffe_code/"** folder and **"Installation"** section in r
 ----
 ## Configuration
 This is for Ubuntu with 12 GB Titan card. Will release a windows version w/ batch size = 1 later.
+
+----
+## Data
+Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/master/data)
