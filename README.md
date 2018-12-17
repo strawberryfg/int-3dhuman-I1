@@ -32,6 +32,8 @@ Otherwise I have no idea how to train **I1**. **CAN ANYONE ENLIGHTEN ME?**
 
 1. **Adaptive H1** adaptively computes gradient magnitude of 2D/3D heatmap w.r.t neuron, and tries to **balance gradients flowing from 2D and 3D heatmap**. Search *AdaptiveWeightEucLoss* in [this pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf) for expatiation.
 
+2. **Adaptive I1** adaptively balance the gradient of 2D/3D heatmap/integral loss w.r.t neuron, restraining one from tuning weight ratio between *heatmap euclidean loss* and *integral regression loss*.
+
 The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing order.
 
   
