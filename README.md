@@ -15,7 +15,7 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
 
 ---
 ## Training procedure
-*First off*, **THERE IS NO GURANTEE THAT OTHER TRAINING STRATEGY WOULD NOT YIELD SAME/SIMILAR OR BETTER RESULTS. THIS IS JUST FOR REFERENCE.**
+*First off*, **THERE IS NO GUARANTEE THAT OTHER TRAINING STRATEGY WOULD NOT YIELD SAME/SIMILAR OR BETTER RESULTS. THIS IS JUST FOR REFERENCE.**
 
 *Having said that*, **I WOULD BE MORE THAN HAPPY TO KNOW IF ANYONE HAS A MORE ELEGANT WAY TO TRAIN THIS *WACKY* STUFF. MUCH APPRECIATED. THANKS!** 
 
@@ -100,4 +100,4 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 32     | 2.5e-5 | 0.002   | Adaptive I1 | [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n) | [net_iter_567946.solverstate](https://drive.google.com/open?id=1AFXPO7SondbiUYbbJZ5cBBu10vuJIQuS) |
   
-  
+  [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n) train around 49 mm test around 56 mm (click [this] for screenshot).
