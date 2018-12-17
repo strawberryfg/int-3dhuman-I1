@@ -32,7 +32,7 @@ Otherwise I have no idea how to train **I1**. **CAN ANYONE ENLIGHTEN ME?**
 
 1. **Adaptive H1** adaptively computes gradient magnitude of 2D/3D heatmap w.r.t neuron, and tries to **balance gradients flowing from 2D and 3D heatmap**. Search *AdaptiveWeightEucLoss* in [this pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf) for expatiation.
 
-2. **Adaptive I1** adaptively balance the gradient of 2D/3D heatmap/integral loss w.r.t neuron, restraining one from tuning weight ratio between *heatmap euclidean loss* and *integral regression loss*.
+2. **Adaptive I1** adaptively balances the gradient of 2D/3D heatmap/integral loss w.r.t neuron, restraining one from tuning weight ratio between *heatmap euclidean loss* and *integral regression loss*.
 
 The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing order.
 
@@ -56,3 +56,13 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   | d2 | lr   |  "heatmap2" init std  | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 8     | 2.5e-5 | 0.01   | Adaptive I1 | [net_iter_265747.caffemodel](https://drive.google.com/open?id=1kTNmfoXtIVAmYJXRAGtzRBK6MFB-EPg9) | [net_iter_265747.solverstate](https://drive.google.com/open?id=1koqQ8SrOclTbEcNXQeCaqsc7gv79rl8d)|
+  
+  - **Manual**
+  ```
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d8_ada_manual.prototxt --snapshot=net_iter_265747.solverstate
+  ```
+  | d2 | lr   |  loss ratio of 2D HM:3D HM:integral   | loss | Caffe Model  | Solver State |
+  |:-:|:-:|:-:|:-:|:-:|:-:|
+  | 8     | 2.5e-5 | 1:0.1:1   | Manual | [net_iter_350433.caffemodel](https://drive.google.com/open?id=1WQTbk1gCHOqK1FsnTVw9I7k687QqQr7A)| [net_iter_350433.solverstate](https://drive.google.com/open?id=1YpPs6Fx08KGbzpLUbopOQ3puho5im33M)|
+  
+  
