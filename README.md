@@ -112,4 +112,14 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 64     | 2.5e-5 | 0.002   | Adaptive I1 | [net_iter_600890.caffemodel](https://drive.google.com/open?id=185DC6Md-hv3Tibb842BuecnUjOz-cgV9) | [net_iter_600890.solverstate](https://drive.google.com/open?id=1MS-B4i6bCEqRIvCNhU9atAX4kGwvWPV1) |
   
-  [net_iter_600890.caffemodel](https://drive.google.com/open?id=185DC6Md-hv3Tibb842BuecnUjOz-cgV9) train around **43 *mm***, test around **68 *mm***
+  [net_iter_600890.caffemodel](https://drive.google.com/open?id=185DC6Md-hv3Tibb842BuecnUjOz-cgV9) train around **43 *mm***, test around **68 *mm***.
+  
+  - **Manual** 
+  ```
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_64_ada_manual.prototxt --snapshot=net_iter_600890.solverstate
+  ```
+  
+  | d2 | lr   |  loss ratio of 2D HM:3D HM:integral   | loss | Caffe Model  | Solver State |
+  |:-:|:-:|:-:|:-:|:-:|:-:|
+  | 64     | **5e-6** | 1:0.08:1   | Manual | [net_iter_671782.caffemodel](https://drive.google.com/open?id=1tCDiVq2Uzv9eQePTalNB0xMqwWyynkQU) | [net_iter_671782.solverstate](https://drive.google.com/open?id=1EamXyx6zRt-PiC6UB1pjsKVYXAa8xjX5) |
+ 
