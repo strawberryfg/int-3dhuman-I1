@@ -25,6 +25,6 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increaseing o
   $CAFFE_ROOT/build/tools/caffe train --solver=solver_d4_ada.prototxt --weights=improved-hourglass_iter_640000.caffemodel
   ```
   
-  | Method |d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
-  |:-:|:-:|:-:|:-:|:-:|
-  | Mine     | 64 | 111   |123 |8789|
+  | d2 | lr   |  "heatmap2" init std  | loss | Caffe Model  | Solver State |
+  |:-:|:-:|:-:|:-:|:-:|:-:|
+  | 4     | 2.5e-5 | 0.01   | Adaptive H1 |123 |8789|
