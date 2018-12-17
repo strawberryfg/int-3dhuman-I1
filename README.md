@@ -67,7 +67,7 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 8     | **5e-6** | 1:0.1:1   | Manual | [net_iter_350433.caffemodel](https://drive.google.com/open?id=1WQTbk1gCHOqK1FsnTVw9I7k687QqQr7A)| [net_iter_350433.solverstate](https://drive.google.com/open?id=1YpPs6Fx08KGbzpLUbopOQ3puho5im33M)|
   
-  [net_iter_350433.caffemodel](https://drive.google.com/open?id=1WQTbk1gCHOqK1FsnTVw9I7k687QqQr7A) train around **71 *mm***, test around **83 *mm***
+  [net_iter_350433.caffemodel](https://drive.google.com/open?id=1WQTbk1gCHOqK1FsnTVw9I7k687QqQr7A) train around **71 *mm***, test around **83 *mm***.
 - **d2 = 16**
   - **Adaptive I1**
   ```
@@ -78,7 +78,7 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 16     | 2.5e-5 | **0.002**   | Adaptive I1 | [net_iter_434657.caffemodel](https://drive.google.com/open?id=1qBbSrbkzlK9neE7DmaZDVwFkprr0u3p7)| [net_iter_434657.solverstate](https://drive.google.com/open?id=1JwHjhVwt3ivumKunTagSqkHx5pJb0LoO)|
   
-  [net_iter_434657.caffemodel](https://drive.google.com/open?id=1qBbSrbkzlK9neE7DmaZDVwFkprr0u3p7) train around **50 *mm***, test around **73 *mm***
+  [net_iter_434657.caffemodel](https://drive.google.com/open?id=1qBbSrbkzlK9neE7DmaZDVwFkprr0u3p7) train around **50 *mm***, test around **73 *mm***.
   
   - **Manual** 
   ```
@@ -112,4 +112,4 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 64     | 2.5e-5 | 0.002   | Adaptive I1 | [net_iter_600890.caffemodel](https://drive.google.com/open?id=185DC6Md-hv3Tibb842BuecnUjOz-cgV9) | [net_iter_600890.solverstate](https://drive.google.com/open?id=1MS-B4i6bCEqRIvCNhU9atAX4kGwvWPV1) |
   
-  
+  [net_iter_600890.caffemodel](https://drive.google.com/open?id=185DC6Md-hv3Tibb842BuecnUjOz-cgV9) train around **43 *mm***, test around **68 *mm***
