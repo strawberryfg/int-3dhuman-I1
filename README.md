@@ -23,7 +23,7 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increaseing o
 
 **Note 2 [*loss*]:** 
 
-1. *Adaptive H1* adaptively computes gradient magnitude of 2D/3D heatmap w.r.t neuron, and tries to balance gradients flowing from 2D and 3D heatmap. Search *AdaptiveWeightEucLoss* in [this pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf) for expatiation.
+1. **Adaptive H1** adaptively computes gradient magnitude of 2D/3D heatmap w.r.t neuron, and tries to **balance gradients flowing from 2D and 3D heatmap**. Search *AdaptiveWeightEucLoss* in [this pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf) for expatiation.
 
   
 - **d2 = 4**
