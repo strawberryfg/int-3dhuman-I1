@@ -34,6 +34,8 @@ Otherwise I have no idea how to train **I1**. **CAN ANYONE ENLIGHTEN ME?**
 
 2. **Adaptive I1** adaptively balances the gradient of 2D/3D heatmap/integral loss w.r.t neuron, restraining one from tuning weight ratio between *heatmap euclidean loss* and *integral regression loss*.
 
+3. **Manual** sets loss ratio of heatmap:integral manually after **Adaptive I1** *warm-up*.
+
 The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing order.
 
   
