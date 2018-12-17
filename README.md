@@ -1,5 +1,5 @@
 # int-3dhuman-I1
-Hey there, this is the implementation of I1 (heatmap loss + integral loss) in this paper. Training is on H36M *exclusively* with 2-stage [coarse to fine](https://arxiv.org/pdf/1611.07828.pdf) Hourglass(https://arxiv.org/pdf/1603.06937.pdf). Simply jump to **Training procedure** below if you are not using C++.
+Hey there, this is the implementation of I1 (heatmap loss + integral loss) in [this paper](https://arxiv.org/pdf/1711.08229.pdf). Training is on H36M *exclusively* with 2-stage [*coarse to fine*](https://arxiv.org/pdf/1611.07828.pdf) [Hourglass](https://arxiv.org/pdf/1603.06937.pdf). Simply jump to **Training procedure** below if you are not using C++.
 
 ----
 ## Source code & Installation
