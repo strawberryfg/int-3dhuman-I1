@@ -42,8 +42,9 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 4     | 2.5e-5 | 0.01   | Adaptive H1 | [net_iter_160533.caffemodel](https://drive.google.com/open?id=1LLTM2Ak4AHbdiZQZrsGhyXucDQOO313k) | [net_iter_160533.solverstate](https://drive.google.com/open?id=1Pyfocolp4gGg58ls-o6y30x9wX5Fembx) |
 
-  - **d2 = 8**
+- **d2 = 8**
+  - **Adaptive I1**
   ```
   cd ../../training/d2=8
-  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d4_ada.prototxt --weights=improved-hourglass_iter_640000.caffemodel
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d8_ada.prototxt --snapshot=net_iter_160533.solverstate
   ```
