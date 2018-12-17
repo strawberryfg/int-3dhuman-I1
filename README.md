@@ -100,4 +100,4 @@ The following is sorted by d2 (*depth dimension of 3d heatmap*) in increasing or
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 32     | 2.5e-5 | 0.002   | Adaptive I1 | [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n) | [net_iter_567946.solverstate](https://drive.google.com/open?id=1AFXPO7SondbiUYbbJZ5cBBu10vuJIQuS) |
   
-  [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n) train around 49 mm test around 56 mm (click [this] for screenshot).
+  [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n) train around **49 *mm*** test around [**56 *mm***](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png) (click [this](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png) for screenshot).
