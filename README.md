@@ -15,10 +15,10 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
 
 ----
 ## MPJPE Performance 
-  | d2 | MPJPE(mm) of *this repo (I1)*  |  Caffe Model  | 
-  |:-:|:-:|:-:|
+  | d2 | MPJPE(mm) of *this repo (I1)*  |  Caffe Model  | *FOR REFERENCE* MPJPE(mm) of *corresponding* [*H1 repo*](https://github.com/strawberryfg/c2f-3dhm-human-caffe)|
+  |:-:|:-:|:-:|:-:|
   | 16     | 71.0 | [net_iter_526322.caffemodel](https://drive.google.com/open?id=1RoIHw9KGQglohC7wGPSOAkwwB-veWjY1) | [net_iter_526322.solverstate](https://drive.google.com/open?id=1MkLjLGUmELZ8nFywI2R7PnHoF8cYkfL2)|
-
+  73.6 |
 
 ---
 ## Training procedure
