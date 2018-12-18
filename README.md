@@ -44,9 +44,9 @@ Same as [**"data/"**](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/
   | 32     | [55.9](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d32_full.png) | [net_iter_567946.caffemodel](https://drive.google.com/open?id=1M4yQT-C4cu2MmylRKewP1ussQ_AKGw-n)  | [68.6](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d32_full.png) |
   | 64     | [65.9](https://github.com/strawberryfg/int-3dhuman-I1/blob/master/figs/test_d64_full.png) | [net_iter_671782.caffemodel](https://drive.google.com/open?id=1tCDiVq2Uzv9eQePTalNB0xMqwWyynkQU)   | [67.1](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d64_full.png) |  
 
-*Note that* in order to restrain one from tuning loss weight of 2D/3D HM/integral **to the best of one's ability**, [adaptive euclidean loss weight balancing technique](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/src/caffe/layers/Operations/adaptive_weight_euc_loss_layer.cpp) (as detailed below) is initialized insofar as it does not degrade performance.
+*Note that* in order to restrain one from tuning *loss weight of 2D/3D HM/integral* **to the best of one's ability**, [adaptive euclidean loss weight balancing technique](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/src/caffe/layers/Operations/adaptive_weight_euc_loss_layer.cpp) (as detailed below) is initialized insofar as it does not degrade performance.
 
-*I have a deep [suspicion](http://selfpace.uconn.edu/class/percep/DescartesMeditations.pdf)* concerning the bearing of different training technique on final number. And so I would say what matters most is the algorithm itself rather than the superiority or inferiority of number.
+*I have a deep [skepticsm](http://selfpace.uconn.edu/class/percep/DescartesMeditations.pdf)* concerning the bearing of *different training technique* on *final number*. And so the point I would like to make here is that what matters most is the algorithm itself rather than the superiority or inferiority of number.
 
 *As to depth dimension d2*, [the original paper](https://arxiv.org/pdf/1711.08229.pdf) uses **64**. [This paper](https://arxiv.org/pdf/1809.04987.pdf) uses **16**. This repo prefers **32**.
 
@@ -67,7 +67,7 @@ The starting point is MPII pretrained model. See head of [training section](http
 **Note 2 [*heatmap2_flat_scale*]:** Before softmax normalization, hereinafter *a scale* **30.0** is multiplied by 3d heatmap output for numerical reason. The semantic of heatmap no longer preserves any more, as alluded in [*this issue*](https://github.com/JimmySuen/integral-human-pose/issues/8).
 Otherwise I have no idea how to train **I1**. **CAN ANYONE ENLIGHTEN ME?**
 
-**Note 3 [*loss*]:** Adaptive weight balancing is employed. Found [*this paper*](https://arxiv.org/pdf/1707.04822.pdf) several weeks after writing the [*AdaptiveWeightEucLossLayer*](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/src/caffe/layers/Operations/adaptive_weight_euc_loss_layer.cpp)
+**Note 3 [*loss*]:** **Adaptive weight balancing** is employed. Found [*this paper*](https://arxiv.org/pdf/1707.04822.pdf) several weeks after writing the [*AdaptiveWeightEucLossLayer*](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/src/caffe/layers/Operations/adaptive_weight_euc_loss_layer.cpp)
 
 1. **Adaptive H1** adaptively computes gradient magnitude of 2D/3D heatmap w.r.t neuron, and tries to **balance gradients flowing from 2D and 3D heatmap**. Search *AdaptiveWeightEucLoss* in [this pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf) for expatiation.
 
